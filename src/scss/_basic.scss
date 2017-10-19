@@ -1,0 +1,155 @@
+// Basic styles
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+
+html {
+	background: $lightblue;
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	color: $white; // text-shadow: 2px 2px 0px rgba(0,0,0,.1);
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: normal;
+	line-height: 1.5;
+	padding: 2rem;
+	position: relative;
+
+	@media (min-width: $small) {
+		font-size: 17px;
+		font-size: 1.7rem;
+	}
+}
+
+
+
+a {
+	color: #000;
+	opacity: .3;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+input {
+	color: #302220;
+	transition: all .2s ease-in-out;
+	/*width: 100%;*/
+	margin: 0 1rem 0 2rem;
+	/*display: block;*/
+}
+
+textarea {
+	width: 100%;
+	/*margin: 0 2rem;*/
+	display: block;
+	text-align: center;
+	background: transparent;
+	font-size: 1.3em;
+	color: #FFF;
+	border: none;
+	min-height: 300rem;
+}
+
+button,
+.button {
+	width: auto;
+	margin: 2rem auto;
+	display: inline-block;
+	line-height: 1.25;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #ea8c90;
+	border-color: #ea8c90;
+	color: #fff;
+	opacity: 1;
+	padding: .5rem 1rem;
+	font-size: 2rem;
+	border-radius: .25rem;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+		background-color: #e26166;
+		border-color: #e1585e;
+	}
+}
+
+
+
+
+.wrapper {
+	margin: 2rem auto;
+	max-width: 80rem;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+}
+
+.content-section {
+	background: rgba(0, 0, 0, .1);
+	padding: 1rem 1.5rem;
+	margin: 4rem 0;
+	border-radius: .5rem;
+
+	@media (min-width: $small) {
+		padding: 1rem 3rem;
+		margin: 4rem 2rem;
+	}
+}
+
+
+
+/* Layout */
+
+.section-break {
+	border-top: 2px solid #FFF;
+	margin-top: 3rem;
+	padding-top: 2rem;
+}
+
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.half {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	@media (min-width: $small) {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
