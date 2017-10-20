@@ -36,19 +36,31 @@ class PortfolioDetail extends Component {
 
 		return (
 			<div className="PortfolioDetail">
+				<a href="/portfolio">Back to Portfolio</a>
 
-				<h3>{this.state.name}</h3>
-				<ul>
-					{ tagMarkup }
-				</ul>
-				<p><a href={this.state.url} >{this.state.url}</a></p>
-				<p><strong>{this.state.tagline}</strong></p>
-				<div dangerouslySetInnerHTML={{__html: this.state.desc }} />
+				<div className="row">
 
-				<img src={heroDesktop} alt={this.state.name + ' Desktop'} />
-				<img src={heroMobile} alt={this.state.name + ' Mobile'} />
+					<div className="half">
+						<h2>{this.state.name}</h2>
+						<ul>
+							{ tagMarkup }
+						</ul>
+						<p><a href={this.state.url} >{this.state.url}</a></p>
+						<p><strong>{this.state.tagline}</strong></p>
+						<div dangerouslySetInnerHTML={{__html: this.state.desc }} />
+					</div>
+					<div className="half">
+						<div className="PortfolioDetail__herowrap">
+							<img className="PortfolioDetail__desktopimg" src={heroDesktop} alt={this.state.name + ' Desktop'} />
+							<img className="PortfolioDetail__mobileimg" src={heroMobile} alt={this.state.name + ' Mobile'} />
+						</div>
+					</div>
 
-				<ul>
+
+				</div>
+
+
+				<ul className="PortfolioDetail__gallery">
 		            {
 						Object
 						.keys(this.state.images)

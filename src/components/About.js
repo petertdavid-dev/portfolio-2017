@@ -23,6 +23,7 @@ class About extends Component {
 			<div className="About">
 				<div className="row">
 					<div className="half">
+						<h2>Get in contact</h2>
 						<big>Feel free to contact me about any opportunities to work with your team.</big>
 						<p>Email: <a href="mailto:petertdavid@gmail.com?subject=Let's work together">petertdavid@gmail.com</a></p>
 						<p>Phone: #206-617-9415</p>

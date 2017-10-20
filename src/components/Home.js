@@ -6,8 +6,7 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-      	home
-
+		<h2>Welcome</h2>
       	<Lorem></Lorem>
       </div>
     );
