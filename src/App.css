@@ -366,19 +366,19 @@ html {
   box-sizing: inherit; }
 
 html {
-  background: #75A9B6;
+  background: #F0CA5A;
   font-size: 62.5%;
   height: 100%; }
 
 body {
-  font-family: 'Work Sans', sans-serif;
   color: #FFF;
   font-size: 14px;
   font-size: 1.4rem;
-  font-weight: 300;
   line-height: 1.5;
-  position: relative; }
-  @media (min-width: 768px) {
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal; }
+  @media (min-width: 20rem) {
     body {
       font-size: 17px;
       font-size: 1.7rem; } }
@@ -410,7 +410,8 @@ textarea {
   min-height: 300rem; }
 
 button,
-.button {
+.button,
+.lorem__para-length label {
   width: auto;
   margin: 2rem auto;
   display: inline-block;
@@ -427,7 +428,8 @@ button,
   border-radius: .25rem;
   transition: all .2s ease-in-out; }
   button:hover,
-  .button:hover {
+  .button:hover,
+  .lorem__para-length label:hover {
     text-decoration: none;
     color: #fff;
     background-color: #e26166;
@@ -449,7 +451,7 @@ iframe {
   padding: 1rem 1.5rem;
   margin: 4rem 0;
   border-radius: .5rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 20rem) {
     .content-section {
       padding: 1rem 3rem;
       margin: 4rem 2rem; } }
@@ -469,7 +471,7 @@ iframe {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
-  @media (min-width: 768px) {
+  @media (min-width: 20rem) {
     .half {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -497,7 +499,9 @@ body {
   box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.2);
   padding: 0 1rem; }
   .app-header h1 {
-    margin: 0; }
+    margin: 0;
+    font-family: "Ultra", serif;
+    font-weight: normal; }
     .app-header h1 a {
       opacity: 1;
       color: #FFF; }
@@ -532,20 +536,69 @@ body {
       text-decoration: none;
       background: #c89517; }
 
-.lorem__para-num {
-  margin: 1rem 0 0 -2rem; }
+.lorem__form {
+  margin: -1rem .5rem;
+  background: #b9ad97;
+  border: 4px solid #90826f;
+  border-color: #aaa585 #90826f;
+  border-width: 0 2rem 4rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0 0 .5rem .5rem;
+  box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.35), 0 0 38px rgba(255, 255, 255, 0.5);
+  position: relative;
+  z-index: 5; }
+  @media (min-width: 20rem) {
+    .lorem__form {
+      padding: 1rem 3rem; } }
+  .lorem__form:after {
+    content: '';
+    background: #454534;
+    border-radius: .5rem .5rem 0 0;
+    height: 2rem;
+    width: 100%;
+    position: absolute;
+    bottom: -4rem;
+    left: 2.5%;
+    transform: perspective(50rem) rotateX(40deg) translateY(3px); }
+    @media (min-width: 20rem) {
+      .lorem__form:after {
+        width: 50%; } }
+  .lorem__form h3 {
+    color: #333;
+    text-align: right;
+    opacity: .45;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    margin: .25em 0 0;
+    padding: 0;
+    line-height: 1em;
+    font-size: .75em; }
 
-.lorem__para-num input {
-  line-height: 2em;
-  text-align: center;
-  border-radius: 3px;
-  border: none;
-  padding: 0 .5rem;
-  height: 2em;
-  width: 3em; }
+.lorem__para-num {
+  margin: 0 0 0 -2rem;
+  display: inline-block; }
+  .lorem__para-num input {
+    line-height: 2em;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    padding: 0 .5rem;
+    height: 2em;
+    width: 3em; }
 
 .lorem__para-length {
-  margin: 1rem 0 0 -2rem; }
+  margin: 0 0 0 2rem;
+  display: inline-block; }
+  .lorem__para-length input {
+    opacity: 0; }
+    .lorem__para-length input:checked + label {
+      background: #4587A1; }
+  .lorem__para-length label {
+    background: #75A9B6;
+    margin: 0 .5rem;
+    font-size: .75em; }
+  .lorem__para-length .button, .lorem__para-length label {
+    margin: 0 .5rem; }
 
 .lorem__text {
   background: #FFF;
@@ -553,11 +606,55 @@ body {
   text-shadow: none;
   padding: 1rem 1.5rem;
   margin: 4rem 0;
-  border-radius: .5rem; }
-  @media (min-width: 768px) {
+  width: 100%; }
+  @media (min-width: 20rem) {
     .lorem__text {
+      width: 50%;
       padding: 1rem 3rem;
       margin: 4rem 2rem; } }
+  .lorem__text--default {
+    color: #264b5a;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    background: transparent;
+    padding: 0;
+    font-family: "Ultra", serif;
+    font-weight: normal; }
+  .lorem__text--lorem {
+    font-family: "VT323", monospace;
+    font-weight: 300;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-200%);
+    z-index: 0;
+    position: relative;
+    margin-top: 0;
+    width: 100%; }
+    @media (min-width: 20rem) {
+      .lorem__text--lorem {
+        width: 45%;
+        left: 4%; } }
+    .lorem__text--lorem.print {
+      transform: translateY(0);
+      transition: all 2s ease-out; }
+
+.me__wrap {
+  width: 100%;
+  float: right;
+  position: relative;
+  z-index: 10;
+  bottom: -2rem;
+  right: 0; }
+  @media (min-width: 20rem) {
+    .me__wrap {
+      bottom: 0;
+      right: -15%;
+      width: 75%;
+      position: fixed; } }
+  @media (min-width: 100rem) {
+    .me__wrap {
+      width: 75%;
+      right: -25%;
+      position: fixed; } }
 
 .PortfolioCard {
   padding: 1rem;
@@ -570,7 +667,7 @@ body {
   transition: all .2s;
   opacity: 1;
   -webkit-backface-visibility: hidden; }
-  @media (min-width: 768px) {
+  @media (min-width: 20rem) {
     .PortfolioCard {
       max-width: 30%; } }
   .PortfolioCard:hover {
@@ -639,6 +736,38 @@ body {
   max-width: 100%;
   overflow: auto; }
 
+.lorem-anim-appear .lorem__form {
+  transform: translateY(-100%); }
+
+.lorem-anim-appear .me__wrap {
+  transform: translateY(100%); }
+
+.lorem-anim-appear.lorem-anim-appear-active .lorem__form {
+  transform: translateY(0);
+  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+.lorem-anim-appear.lorem-anim-appear-active .me__wrap {
+  transform: translateY(0);
+  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+.me-anim-appear {
+  transform: translateY(100%); }
+  .me-anim-appear.me-anim-appear-active {
+    transform: translateY(0);
+    -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+.card-anim-appear {
+  opacity: 0.01;
+  transform: scale(0.05); }
+  .card-anim-appear.card-anim-appear-active {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -652,7 +781,7 @@ body {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-.visuallyhidden {
+.visuallyhidden, .lorem__para-length input {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -667,8 +796,9 @@ body {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .lorem__para-length input.focusable:active,
+.visuallyhidden.focusable:focus,
+.lorem__para-length input.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;

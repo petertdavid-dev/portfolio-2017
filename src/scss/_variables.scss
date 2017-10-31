@@ -9,9 +9,45 @@ $orange: #D19C18;
 $red: #D42C08;
 $white: #FFF;
 $black: #333;
-
+$tan: #E7F2BD;
+$bgyellow: #F0CA5A;
 
 // breakpoints
-$small: 768px;
+$small: 20rem;
+$medium: 50rem;
+$large: 100rem;
 
 $max-width: 100rem;
+
+// Fonts
+$monospace-font: 'VT323', monospace;
+$body-font: 'Work Sans', sans-serif;
+$display-font: 'Ultra', serif;
+
+@mixin monospace-font() {
+	font-family: $monospace-font;
+	font-weight: 300;
+}
+
+@mixin body-font() {
+	font-family: $body-font;
+	font-weight: normal;
+}
+
+@mixin display-font() {
+	font-family: $display-font;
+	font-weight: normal;
+}
+
+// easing
+@mixin ease-out-back( $property, $time ) {
+	-webkit-transition: $property $time cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition:         $property $time cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+// @mixin ease-out-elastic( properties: all, time: .3s ) {
+// 	-webkit-transition: $properties $time cubic-bezier(0.68, -0.55, 0.265, 1.55);
+// 	transition:         $properties $time cubic-bezier(0.68, -0.55, 0.265, 1.55);
+// }
+
+

@@ -11,6 +11,7 @@ import About from './components/About';
 import NotFound from './components/NotFound';
 
 const Root = () => {
+
   return (
 	<Router>
 		<div className="app-wrapper">
@@ -20,13 +21,20 @@ const Root = () => {
 
 			<main className="app-main">
 				<div className="app-main__inner">
-					<Switch>
-							<Route exact path="/" component={Home} />
-							<Route exact path="/portfolio/" component={Portfolio} />
-							<Route exact path="/portfolio/:projectId" component={PortfolioDetail} />
-							<Route exact path="/about" component={About} />
-							<Route component={NotFound}/>
-					</Switch>
+
+
+
+						<Switch>
+								<Route exact path="/" component={Home} />
+								<Route exact path="/portfolio/" component={Portfolio} />
+								<Route exact path="/portfolio/:projectId" component={PortfolioDetail} />
+								<Route exact path="/about" component={About} />
+								<Route component={NotFound}/>
+						</Switch>
+
+
+
+
 				</div>
 			</main>
 
