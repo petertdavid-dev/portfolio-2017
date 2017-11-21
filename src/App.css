@@ -366,18 +366,17 @@ html {
   box-sizing: inherit; }
 
 html {
-  background: #F0CA5A;
   font-size: 62.5%;
   height: 100%; }
 
 body {
-  color: #FFF;
+  color: #333;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.5;
   position: relative;
-  font-family: "Work Sans", sans-serif;
-  font-weight: normal; }
+  font-family: "Vollkorn", sans-serif;
+  font-weight: 300; }
   @media (min-width: 20rem) {
     body {
       font-size: 17px;
@@ -491,20 +490,26 @@ body {
   display: flex;
   flex-direction: column; }
 
+h2 {
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 1.1em; }
+
 .app-header {
-  background: #4587A1;
+  background: #FFF;
   flex: 0 0 auto;
   position: relative;
   z-index: 5;
   box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.2);
   padding: 0 1rem; }
   .app-header h1 {
-    margin: 0;
-    font-family: "Ultra", serif;
-    font-weight: normal; }
+    margin: 0; }
     .app-header h1 a {
       opacity: 1;
-      color: #FFF; }
+      color: #333;
+      text-transform: uppercase;
+      font-style: italic; }
       .app-header h1 a:hover {
         text-decoration: none; }
 
@@ -537,6 +542,7 @@ body {
       background: #c89517; }
 
 .lorem__form {
+  font-family: "Didact Gothic", monospace;
   margin: -1rem .5rem;
   background: #b9ad97;
   border: 4px solid #90826f;
@@ -606,7 +612,8 @@ body {
   text-shadow: none;
   padding: 1rem 1.5rem;
   margin: 4rem 0;
-  width: 100%; }
+  width: 100%;
+  line-height: 2em; }
   @media (min-width: 20rem) {
     .lorem__text {
       width: 50%;
@@ -615,20 +622,23 @@ body {
   .lorem__text--default {
     color: #264b5a;
     font-size: 1.5em;
-    line-height: 1.3em;
+    line-height: 2em;
     background: transparent;
     padding: 0;
-    font-family: "Ultra", serif;
+    font-family: "Abril Fatface", sans-serif;
     font-weight: normal; }
+    .lorem__text--default p {
+      line-height: 1.3em; }
   .lorem__text--lorem {
     font-family: "VT323", monospace;
-    font-weight: 300;
+    font-weight: normal;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transform: translateY(-200%);
     z-index: 0;
     position: relative;
     margin-top: 0;
-    width: 100%; }
+    width: 100%;
+    line-height: 1.3em; }
     @media (min-width: 20rem) {
       .lorem__text--lorem {
         width: 45%;
@@ -744,20 +754,20 @@ body {
 
 .lorem-anim-appear.lorem-anim-appear-active .lorem__form {
   transform: translateY(0);
-  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  -webkit-transition: all 1s cubic-bezier(1, 0, 0, 1);
+  transition: all 1s cubic-bezier(1, 0, 0, 1); }
 
 .lorem-anim-appear.lorem-anim-appear-active .me__wrap {
   transform: translateY(0);
-  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  -webkit-transition: all 1s cubic-bezier(1, 0, 0, 1);
+  transition: all 1s cubic-bezier(1, 0, 0, 1); }
 
 .me-anim-appear {
   transform: translateY(100%); }
   .me-anim-appear.me-anim-appear-active {
     transform: translateY(0);
-    -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    -webkit-transition: all 1s cubic-bezier(1, 0, 0, 1);
+    transition: all 1s cubic-bezier(1, 0, 0, 1); }
 
 .card-anim-appear {
   opacity: 0.01;
