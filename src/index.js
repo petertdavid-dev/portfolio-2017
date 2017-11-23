@@ -10,6 +10,7 @@ import PortfolioDetail from './components/PortfolioDetail';
 import About from './components/About';
 import NotFound from './components/NotFound';
 
+
 const Root = () => {
 
   return (
