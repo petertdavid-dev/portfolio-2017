@@ -3,7 +3,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // import ReactTransitionGroup from 'react-addons-transition-group';
 import me from '../images/me.png';
 import Lorem from './Lorem';
-import { TweenMax } from 'gsap';
+// import { TweenMax } from 'gsap';
 // import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 class Home extends Component {
@@ -32,7 +32,7 @@ class Home extends Component {
           transitionAppearTimeout={1000}
           transitionEnter={false}
           transitionLeave={false} >
-          <img src={me} />
+          <img src={me} alt="Peter David" />
         </ReactCSSTransitionGroup>              
 
 

@@ -2,15 +2,65 @@ import React, { Component } from 'react';
 import projectData from './project-data';
 
 class PortfolioPic extends Component {
+
+	constructor(props) {
+		super(props);
+
+	    this.state = {
+	    	active : false
+		}
+
+		this.photoPop = this.photoPop.bind(this);
+		this.photoClose = this.photoClose.bind(this);
+	}
+
+	photoPop( e ) {
+
+		if ( e !== null ){
+			e.preventDefault();		
+		}
+
+		// const thisPop = this.refs.thisPop;
+		const thisPopInner = this.refs.thisPopInner;
+		const thisTrigger = this.refs.thisTrigger;
+
+		thisPopInner.innerHTML = ' <img src="' + thisTrigger.getAttribute("href") + '" >';
+
+		if ( this.state.active ) {
+			this.setState({active: false}); 
+			thisPopInner.innerHTML = '';
+		} else {
+			this.setState({active: true}); 
+		}
+
+	}
+
+	photoClose( e ) {
+		if ( e !== null ){
+			e.preventDefault();		
+		}
+
+		const thisPopInner = this.refs.thisPopInner;
+		thisPopInner.innerHTML = '';
+
+		this.setState({active: false}); 
+	}
+
 	render() {
 
 		const photo = require('../images/' + this.props.src);
+		const thumb = require('../images/' + this.props.thumb);
+		const isActive = ( this.state.active ) ? 'active' : '';
 
 		return (
-		  <li className="PortfolioPic">
-		  	<a href={ this.props.src } >
-				<img src={photo} alt={this.props.alt} />
+		  <li className="PortfolioPic"  >
+		  	<a className="PortfolioPic__link" ref="thisTrigger" onClick={ this.photoPop } href={ photo } >
+				<img src={ thumb } alt={ this.props.alt } />
 		  	</a>
+		  	<div className={ 'PortfolioPic__pop ' + isActive } ref="thisPop" >
+			  	<a className="PortfolioPic__close" onClick={ this.photoClose } href={ photo } >Close</a>
+			  	<div ref="thisPopInner"></div>
+		  	</div>
 		  </li>
 		);
 	}
@@ -30,9 +80,9 @@ class PortfolioDetail extends Component {
 		const heroDesktop = require('../images/' + this.state.heroDesktop);
 		const heroMobile = require('../images/' + this.state.heroMobile);
 
-		let tagMarkup = this.state.tags.map(function(name){
+		const tagMarkup = this.state.tags.map(function(name){
                         return <li key={name} className="PortfolioDetail__tag" >{name}</li>;
-                      })
+                      });
 
 		return (
 			<div className="PortfolioDetail">
@@ -64,7 +114,7 @@ class PortfolioDetail extends Component {
 		            {
 						Object
 						.keys(this.state.images)
-						.map(key => <PortfolioPic key={key} index={key} alt={this.state.name + ' ' + key} src={this.state.images[key]} />)
+						.map(key => <PortfolioPic key={key} index={key} alt={this.state.name + ' ' + key} src={this.state.images[key][0]} thumb={this.state.images[key][1]} />)
 					}
 				</ul>
 

@@ -377,7 +377,7 @@ body {
   position: relative;
   font-family: "Vollkorn", sans-serif;
   font-weight: 300; }
-  @media (min-width: 20rem) {
+  @media (min-width: 30rem) {
     body {
       font-size: 17px;
       font-size: 1.7rem; } }
@@ -450,7 +450,7 @@ iframe {
   padding: 1rem 1.5rem;
   margin: 4rem 0;
   border-radius: .5rem; }
-  @media (min-width: 20rem) {
+  @media (min-width: 30rem) {
     .content-section {
       padding: 1rem 3rem;
       margin: 4rem 2rem; } }
@@ -470,7 +470,7 @@ iframe {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
-  @media (min-width: 20rem) {
+  @media (min-width: 30rem) {
     .half {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -504,7 +504,11 @@ h2 {
   box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.2);
   padding: 0 1rem; }
   .app-header h1 {
-    margin: 0; }
+    margin: 0;
+    font-size: 1.25em; }
+    @media (min-width: 50rem) {
+      .app-header h1 {
+        font-size: 2em; } }
     .app-header h1 a {
       opacity: 1;
       color: #333;
@@ -525,25 +529,35 @@ h2 {
 
 .app-nav {
   flex: 0 0 auto;
-  background: #D19C18;
   display: flex;
-  box-shadow: -2px -2px 4px rgba(51, 51, 51, 0.3);
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  background: #D19C18;
+  box-shadow: -2px -2px 4px rgba(51, 51, 51, 0.3); }
+  @media (min-width: 50rem) {
+    .app-nav {
+      background: transparent;
+      box-shadow: none;
+      position: absolute;
+      top: 0;
+      right: 0; } }
   .app-nav a {
     flex: 1;
-    padding: 1rem;
+    padding: 1.4rem;
     display: block;
     text-align: center;
     color: #FFF;
     opacity: 1; }
+    @media (min-width: 50rem) {
+      .app-nav a {
+        color: #333; } }
     .app-nav a:hover {
       text-decoration: none;
       background: #c89517; }
 
 .lorem__form {
   font-family: "Didact Gothic", monospace;
-  margin: -1rem .5rem;
+  margin: -1rem 0;
   background: #b9ad97;
   border: 4px solid #90826f;
   border-color: #aaa585 #90826f;
@@ -553,7 +567,7 @@ h2 {
   box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.35), 0 0 38px rgba(255, 255, 255, 0.5);
   position: relative;
   z-index: 5; }
-  @media (min-width: 20rem) {
+  @media (min-width: 50rem) {
     .lorem__form {
       padding: 1rem 3rem; } }
   .lorem__form:after {
@@ -561,12 +575,12 @@ h2 {
     background: #454534;
     border-radius: .5rem .5rem 0 0;
     height: 2rem;
-    width: 100%;
+    width: 95%;
     position: absolute;
     bottom: -4rem;
     left: 2.5%;
     transform: perspective(50rem) rotateX(40deg) translateY(3px); }
-    @media (min-width: 20rem) {
+    @media (min-width: 50rem) {
       .lorem__form:after {
         width: 50%; } }
   .lorem__form h3 {
@@ -593,8 +607,12 @@ h2 {
     width: 3em; }
 
 .lorem__para-length {
-  margin: 0 0 0 2rem;
-  display: inline-block; }
+  margin: 1rem 0 0 -.5rem;
+  display: block; }
+  @media (min-width: 50rem) {
+    .lorem__para-length {
+      margin: 0 .5rem 0 2rem;
+      display: inline-block; } }
   .lorem__para-length input {
     opacity: 0; }
     .lorem__para-length input:checked + label {
@@ -606,6 +624,17 @@ h2 {
   .lorem__para-length .button, .lorem__para-length label {
     margin: 0 .5rem; }
 
+.lorem__submit {
+  margin: 1rem 0 0;
+  width: 47%;
+  font-size: 1.25rem;
+  padding: 1rem 0 1.2rem; }
+  @media (min-width: 50rem) {
+    .lorem__submit {
+      margin: 2rem auto;
+      padding: .5rem 1rem;
+      width: auto; } }
+
 .lorem__text {
   background: #FFF;
   color: #333;
@@ -614,7 +643,7 @@ h2 {
   margin: 4rem 0;
   width: 100%;
   line-height: 2em; }
-  @media (min-width: 20rem) {
+  @media (min-width: 50rem) {
     .lorem__text {
       width: 50%;
       padding: 1rem 3rem;
@@ -629,6 +658,10 @@ h2 {
     font-weight: normal; }
     .lorem__text--default p {
       line-height: 1.3em; }
+  .lorem__text--default-links {
+    font-family: "Vollkorn", sans-serif;
+    font-weight: 300;
+    font-size: 80%; }
   .lorem__text--lorem {
     font-family: "VT323", monospace;
     font-weight: normal;
@@ -637,9 +670,10 @@ h2 {
     z-index: 0;
     position: relative;
     margin-top: 0;
-    width: 100%;
+    width: 84.5%;
+    left: 7.5%;
     line-height: 1.3em; }
-    @media (min-width: 20rem) {
+    @media (min-width: 50rem) {
       .lorem__text--lorem {
         width: 45%;
         left: 4%; } }
@@ -653,18 +687,18 @@ h2 {
   position: relative;
   z-index: 10;
   bottom: -2rem;
-  right: 0; }
-  @media (min-width: 20rem) {
+  right: 0;
+  max-height: 75vh; }
+  @media (min-width: 50rem) {
     .me__wrap {
-      bottom: 0;
       right: -15%;
-      width: 75%;
+      width: 65%;
       position: fixed; } }
   @media (min-width: 100rem) {
     .me__wrap {
-      width: 75%;
-      right: -25%;
-      position: fixed; } }
+      right: -25%; } }
+  .me__wrap img {
+    vertical-align: bottom; }
 
 .PortfolioCard {
   padding: 1rem;
@@ -677,7 +711,7 @@ h2 {
   transition: all .2s;
   opacity: 1;
   -webkit-backface-visibility: hidden; }
-  @media (min-width: 20rem) {
+  @media (min-width: 30rem) {
     .PortfolioCard {
       max-width: 30%; } }
   .PortfolioCard:hover {
@@ -714,16 +748,16 @@ h2 {
   position: relative; }
 
 .PortfolioDetail__desktopimg {
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
-  border-radius: .25rem; }
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  transform: rotateY(-34deg) rotateX(3deg); }
 
 .PortfolioDetail__mobileimg {
   max-width: 40%;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   position: absolute;
   bottom: -33%;
-  right: 5%;
-  border-radius: .25rem; }
+  right: 10%;
+  transform: rotateY(-34deg) rotateX(3deg); }
 
 .PortfolioDetail__gallery {
   padding: 0;
@@ -732,15 +766,35 @@ h2 {
   justify-content: center;
   content-align: center;
   flex-wrap: wrap; }
-  .PortfolioDetail__gallery a {
+  .PortfolioDetail__gallery .PortfolioPic__link {
     width: 10rem;
     display: inline-block;
     height: 10rem;
     opacity: 1;
     margin: 0 5px 5px 0; }
+    .PortfolioDetail__gallery .PortfolioPic__link:hover {
+      transform: scale(1.1); }
   .PortfolioDetail__gallery img {
     max-width: 100%;
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
+  .PortfolioDetail__gallery .PortfolioPic__close {
+    color: #FFF;
+    text-align: right;
+    opacity: 1; }
+  .PortfolioDetail__gallery .PortfolioPic__pop.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10rem 8%;
+    overflow-y: auto; }
+  .PortfolioDetail__gallery .PortfolioPic__pop .PortfolioPic__close {
+    display: none; }
+  .PortfolioDetail__gallery .PortfolioPic__pop.active .PortfolioPic__close {
+    display: block; }
 
 .IN-widget {
   max-width: 100%;

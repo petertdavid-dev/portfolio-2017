@@ -11,7 +11,7 @@ class About extends Component {
 			console.log( IN.init );
 
 		if (typeof IN.init === "function") {
-			console.log('yes');
+			// console.log('yes');
 			// IN.parse( document.getElementById("linkedinProfile") );
 			IN.init(); 
 		}
@@ -21,23 +21,53 @@ class About extends Component {
 	render() {
 		return (
 			<div className="About">
+				<h2>Get in contact</h2>
+				<big className="clear" >I'm a web developer in Portland, OR who generally focuses on the front end. I enjoy working with PHP, JS, HTML, CSS, SASS, Grunt, jQuery, React, Wordpress, Fender Precision Bass, Hammond Organ, Apple Logic, various bicycles, photography, building responsive frameworks that work like Bootstrap, Twitter Bootstrap, Sublime Text, Transmit FTP, Sequel Pro, Bitbucket, GIT, Photoshop, Illustrator, and other things because the web is always changing.</big>
+
+					<h3>What can I do for your business or development team?</h3>
+
 				<div className="row">
 					<div className="half">
-						<h2>Get in contact</h2>
-						<p>I'm a web developer in Portland, OR who generally focuses on the front end. I enjoy working with PHP, JS, HTML, CSS, SASS, Grunt, jQuery, React, Wordpress, Fender Precision Bass, Hammond Organ, Apple Logic, various bicycles, photography, building responsive frameworks that work like Bootstrap, Twitter Bootstrap, Sublime Text, Transmit FTP, Sequel Pro, Bitbucket, GIT, Photoshop, Illustrator, and other things because the web is always changing.</p>
-						<big>Feel free to contact me about any opportunities to work with your team.</big>
-						<h3>About the design</h3>
-						<p>I gathered the colors from a swatch on Adobe Color called Life Aquatic because I had just rewatched the movie and, it's so good and surprisingly heavy.</p>
-						<p>The printer was based on an Apple Image Writer II. Not in an exact sense, but more in a general way. I color picked an image of one to get the shading right, but an exact copy would have been a little too much in the skewmorphic relm, and let's face it, that's just a little too iPhone 4 to put on a current portfolio.</p>
-						<p>Email: <a href="mailto:petertdavid@gmail.com?subject=Let's work together">petertdavid@gmail.com</a></p>
-						<p>Phone: #206-617-9415</p>
+						
+						<p>Web Development</p>
+						<ul>
+							<li>HTML / HTML5</li>
+							<li>CSS / CSS3</li>
+							<li>JS / jQuery</li>
+							<li>PHP</li>
+							<li>React JS</li>
+						</ul>
+
+						<p>SEO & Performance</p>
+						<ul>
+							<li>Performance Tuning</li>
+							<li>Schema</li>
+						</ul>
 						
 					</div>
-					<div id="linkedinProfile" className="half">
-						<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/petertdavid" data-format="inline" data-related="false"></script>
-					</div>				
+					<div className="half">
 
+						<p>Wordpress</p>
+						<ul>
+							<li>Theme Development</li>
+							<li>Plugin Development</li>
+							<li>Custom Functionality</li>
+						</ul>
+
+						<p>Code & Graphic Design</p>
+						<ul>
+							<li>Animation</li>
+							<li>Typographic & Design Sensibility</li>
+						</ul>
+
+					</div>
 				</div>
+
+				<p>Feel free to contact me about any opportunities to work with your team.</p>
+				<p><strong>Email:</strong> <a href="mailto:petertdavid@gmail.com?subject=Let's work together">petertdavid@gmail.com</a></p>
+
+				<p><a href="https://www.linkedin.com/in/petertdavid/">LinkedIn</a></p>
+
 			</div>
 		);
 	}

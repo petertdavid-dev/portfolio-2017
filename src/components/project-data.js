@@ -9,7 +9,12 @@ const projects = {
 		color: 			'#fff',
 		heroDesktop: 	'atn-home.jpg',
 		heroMobile: 	'atn-mobile.png',
-		images: 		['atn-home.jpg','atn-events-cal.jpg','atn-job-board.jpg','atn-recruiter-pages.jpg'] 
+		images: 		[
+							[ 'atn-home.jpg', 'atn-home_sm.png' ],
+							[ 'atn-events-cal.jpg', 'atn-events-cal_sm.png' ],
+							[ 'atn-job-board.jpg', 'atn-job-board_sm.png' ],
+							[ 'atn-recruiter-pages.jpg', 'atn-recruiter-pages_sm.png' ]
+						] 
 	},
 
 	advancedtraveltherapy: {
@@ -22,7 +27,13 @@ const projects = {
 		color: 			'#fff',
 		heroDesktop: 	'att-home.jpg',
 		heroMobile: 	'att-mobile.png',
-		images: 		['att-home.jpg','att-state-finder.png','att-purchasing-power.jpg','att-wage-hero.jpg', 'att-wage-rank.jpg'] 
+		images: 		[
+							[ 'att-home.jpg', 'att-home_sm.png' ],
+							[ 'att-state-finder.png', 'att-state-finder_sm.png' ],
+							[ 'att-purchasing-power.jpg', 'att-purchasing-power_sm.png' ],
+							[ 'att-wage-hero.jpg', 'att-wage-hero_sm.png' ],
+							[ 'att-wage-rank.jpg', 'att-wage-rank_sm.png' ]
+						] 
 	},
 
 	lensvslens: {
@@ -35,17 +46,21 @@ const projects = {
 		color: 			'#fff',
 		heroDesktop: 	'lvl-home.jpg',
 		heroMobile: 	'lvl-mobile.png',
-		images: 		['lvl-home.jpg','lvl-photo-detail.jpg','lvl-ui.jpg'] 
+		images: 		[
+							[ 'lvl-home.jpg', 'lvl-home_sm.png' ],
+							[ 'lvl-photo-detail.jpg', 'lvl-photo-detail_sm.png' ],
+							[ 'lvl-ui.jpg', 'lvl-ui_sm.png' ],
+						] 
 	},
 
 
 	acronymacronym: {
 		name: 			'Acronym Acronym',
 		tagline: 		'Role: Design, ideation, development.',
-		url: 			'http://acronym-acronym.com/',
+		url: 			'https://github.com/petertdavid-dev/portfolio-2017/',
 		logo: 			'acro-logo.png',
 		tags: 			['ReactJS','HTML','Sass'],
-		desc: 			'<p>I put together a small feature for this portfolio site below, which is a lorem ipsum generator written in vanilla JS. I considered a few different ways of doing this: jQuery plugin, small ReactJS app, but in the end I decided that this is a simple site, with very few extra libraries, so I decided to code a simple app that is indicative of how I might try and organize code for a larger project.</p>',
+		desc: 			'<p>My portfolio site is built in React JS. It features a lorem ipsum printer on the home page. For the design, the printer was based on an Apple Image Writer II. Not in an exact sense, but more in a general way. I color picked an image of one to get the shading right, but an exact copy would have been a little too much on the nose, in the skewmorphic sense. Let\'s face it, that\'s just a little too iPhone 4 to put on a current portfolio.</p>',
 		color: 			'#fff',
 		heroDesktop: 	'gwa-home.jpg',
 		heroMobile: 	'gwa-home.jpg',
@@ -62,7 +77,10 @@ const projects = {
 		color: 			'#fff',
 		heroDesktop: 	'gwa-home.jpg',
 		heroMobile: 	'gowithadvanced-mobile.png',
-		images: 		['gwa-home.jpg','gwa-signature-builder.jpg'] 
+		images: 		[
+							[ 'gwa-home.jpg', 'gwa-home_sm.png' ],
+							[ 'gwa-signature-builder.jpg', 'gwa-signature-builder_sm.png' ],
+						] 
 	},
 
 	ostech: {
@@ -75,7 +93,12 @@ const projects = {
 		color: 			'#3a3a3a',
 		heroDesktop: 	'ost-home.jpg',
 		heroMobile: 	'ostech-mobile.png',
-		images: 		['ost-home.jpg','ost-events.jpg','ost-team-members.jpg','ost-80s-view.jpg'] 
+		images: 		[
+							[ 'ost-home.jpg', 'ost-home_sm.png' ],
+							[ 'ost-events.jpg', 'ost-events_sm.png' ],
+							[ 'ost-team-members.jpg', 'ost-team-members_sm.png' ],
+							[ 'ost-80s-view.jpg', 'ost-80s-view_sm.png' ],
+						]
 	},
 
 	coresource: {
@@ -88,7 +111,11 @@ const projects = {
 		color: 			'#0f0f0f',
 		heroDesktop: 	'corsource-home.jpg',
 		heroMobile: 	'corsource-mobile.png',
-		images: 		['corsource-home.jpg','corsource-secondary.jpg','corsource-secondary-2.jpg'] 
+		images: 		[
+							[ 'corsource-home.jpg', 'corsource-home_sm.png' ],
+							[ 'corsource-secondary.jpg', 'corsource-secondary_sm.png' ],
+							[ 'corsource-secondary-2.jpg', 'corsource-secondary-2_sm.png' ],
+						]
 	},
 
 	davis: {
@@ -101,7 +128,11 @@ const projects = {
 		color: 			'#fff',
 		heroDesktop: 	'davis-home.jpg',
 		heroMobile: 	'davis-mobile.png',
-		images: 		['davis-home.jpg','davis-executives.jpg','davis-jobboard.jpg'] 
+		images: 		[
+							[ 'davis-home.jpg', 'davis-home_sm.png' ],
+							[ 'davis-executives.jpg', 'davis-executives_sm.png' ],
+							[ 'davis-jobboard.jpg', 'davis-jobboard_sm.png' ],
+						]
 	},
 
 	centra: {
@@ -114,7 +145,11 @@ const projects = {
 		color: 			'#4eaedd',
 		heroDesktop: 	'centra-home.jpg',
 		heroMobile: 	'centra-mobile.png',
-		images: 		['centra-home.jpg','centra-popup.jpg','centra-secondary.jpg'] 
+		images: 		[
+							[ 'centra-home.jpg', 'centra-home_sm.png' ],
+							[ 'centra-popup.jpg', 'centra-popup_sm.png' ],
+							[ 'centra-secondary.jpg', 'centra-secondary_sm.png' ],
+						]
 	}
 
 };
