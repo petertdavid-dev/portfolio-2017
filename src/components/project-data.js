@@ -41,8 +41,8 @@ const projects = {
 		tagline: 		'Role: Design, Ideation, Front end development ReactJS, back end Wordpress.',
 		url: 			'http://lensvslens.com/',
 		logo: 			'lvl-logo.png',
-		tags: 			['PHP','JS'],
-		desc: 			'<p>I\'m a photography geek and am always daydreaming if another lens purchase would somehow turn me into <a href="http://alecsoth.com/photography/" target="_blank" >Alec Soth</a> (note to self: this will never happen ☺ ). I find a cool lens and then read a bunch of reviews, and then go to Flickr to see what photos from that lens actually look like. One thing that always bothered me was that Flickr doesn\'t allow you to search by shutter speed, aperture, or focal length, despite that it saves EXIF data.</p><p>I designed, developed and marketed this project. Lens vs Lens started out life as an excuse to learn ReactJS. I started by gathering lenses from Amazon and finding Flickr groups dedicated to fans of that lens. The app then has a cron that regulary polls these groups via the Flickr API and adds them to the database. The UI pulls these photos and allows the user to search the photos by shutter speed, aperture and focal length.</p><p>Photography enthusiasts all over the world have blogged about this project and <a href="http://lensvslens.com/" target="_blank" >lensvslens.com</a> has been covered by <a href="https://petapixel.com/2017/03/15/lens-vs-lens-site-lets-compare-lens-quality-using-flickr-photos/" target="_blank" >Peta Pixel</a>, <a href="http://lifehacker.com/lens-vs-lens-helps-you-pick-the-right-camera-lens-by-c-1793309200" target="_blank" >Life Hacker</a>, and <a href="https://www.shutterbug.com/content/lens-vs-lens-helps-you-be-smart-shopper-comparing-photos-taken-different-lenses" target="_blank" >Shutterbug</a>, among others.</p>',
+		tags: 			['Wordpress REST API','Flickr API','PHP','JS','Amazon Affilliate'],
+		desc: 			'<p>Lens vs Lens started out life as an excuse to learn ReactJS. I\'m a photography geek, and am always daydreaming if another lens purchase would somehow turn me into <a href="http://alecsoth.com/photography/" target="_blank" >Alec Soth</a> (note to self: this will never happen ☺ ). When I would check out photos taken by a lens on Flickr I was frustrated that they didn\'t allow you to search by shutter speed, aperture, or focal length. So I designed Lens vs. Lens to do just that.</p><p>I designed, developed and marketed this project. The site utilizes Amazon Affiliate API, the Flickr API and the Wordpress REST API. The design was inspired by the wonderful book <a href="https://www.amazon.com/Magnum-Contact-Sheets-Center-Photography/dp/0500543992">Magnum Contact Sheets</a>.</p><p>Photography enthusiasts all over the world have blogged about this project and <a href="http://lensvslens.com/" target="_blank" >lensvslens.com</a> has been covered by <a href="https://petapixel.com/2017/03/15/lens-vs-lens-site-lets-compare-lens-quality-using-flickr-photos/" target="_blank" >Peta Pixel</a>, <a href="http://lifehacker.com/lens-vs-lens-helps-you-pick-the-right-camera-lens-by-c-1793309200" target="_blank" >Life Hacker</a>, and <a href="https://www.shutterbug.com/content/lens-vs-lens-helps-you-be-smart-shopper-comparing-photos-taken-different-lenses" target="_blank" >Shutterbug</a>, among others.</p>',
 		color: 			'#fff',
 		heroDesktop: 	'lvl-home.jpg',
 		heroMobile: 	'lvl-mobile.png',
@@ -60,28 +60,64 @@ const projects = {
 		url: 			'https://github.com/petertdavid-dev/portfolio-2017/',
 		logo: 			'acro-logo.png',
 		tags: 			['ReactJS','HTML','Sass'],
-		desc: 			'<p>My portfolio site is built in React JS. It features a lorem ipsum printer on the home page. For the design, the printer was based on an Apple Image Writer II. Not in an exact sense, but more in a general way. I color picked an image of one to get the shading right, but an exact copy would have been a little too much on the nose, in the skewmorphic sense. Let\'s face it, that\'s just a little too iPhone 4 to put on a current portfolio.</p>',
+		desc: 			'<p>My portfolio site is built in React JS. It features a lorem ipsum printer on the home page. For the design, the printer was based on an Apple Image Writer II. Not in an exact sense, but more in a general way. I color picked an image of one to get the shading right, but an exact copy, in a skewmorphic sense, would have been a little too on the nose. And let\'s face it, that kind of design is too iPhone 4 to put on a current portfolio. :)</p><p><a href="https://github.com/petertdavid-dev/portfolio-2017">View the source on github.</a></p>',
 		color: 			'#fff',
-		heroDesktop: 	'gwa-home.jpg',
-		heroMobile: 	'gwa-home.jpg',
+		heroDesktop: 	'aa-desktop.png',
+		heroMobile: 	'aa-mobile.png',
 		images: 		[] 
 	},
 
-	gowithadvanced: {
-		name: 			'Go With Advanced',
-		tagline: 		'Role: Front and back end Wordpress development.',
-		url: 			'https://www.gowithadvanced.com/',
-		logo: 			'gowithadvanced-logo.jpg',
-		tags: 			['Wordpress','HTML','Sass'],
-		desc: 			'<p>The corporate hub site of Advanced. Features include: home and secondary pages, internal careers, moustache js signature builder.</p>',
+	hivey: {
+		name: 			'Hively',
+		tagline: 		'Role: UI / UX Design, Front end lead.',
+		url: 			'http://teamhively.com/',
+		logo: 			'hively_logo.png',
+		tags: 			['CodeIgniter','CSS','PHP','JS'],
+		desc: 			'<p>I was part of a three person team that built and promted Hively, a customer service app that allows teams to get feedback, compete and have fun. The build centered on a gamified approach to customer service, team members would receive points for good ratings and rise up the leader board. It also centered on a lot of email interaction to keep users coming back to the app.</p>',
 		color: 			'#fff',
-		heroDesktop: 	'gwa-home.jpg',
-		heroMobile: 	'gowithadvanced-mobile.png',
+		heroDesktop: 	'hively-desktop.png',
+		heroMobile: 	'hively-mobile.png',
 		images: 		[
-							[ 'gwa-home.jpg', 'gwa-home_sm.png' ],
-							[ 'gwa-signature-builder.jpg', 'gwa-signature-builder_sm.png' ],
+							[ 'hively-leaderboard.png', 'hively-leaderboard_sm.png' ],
+							[ 'hively-kudos.png', 'hively-kudos_sm.png' ],
+							[ 'hively-rate.png', 'hively-rate_sm.png' ],
+							[ 'hively-sig.png', 'hively-sig_sm.png' ]
 						] 
 	},
+
+
+	greenstreetjobs: {
+		name: 			'Green Street Jobs',
+		tagline: 		'Role: Founder, Developer, Designer',
+		url: 			'https://greenstreetjobs.com/',
+		logo: 			'gsj-logo-sm.png',
+		tags: 			['WP Job Manager','Sage','Bootstrap','Ecommerce'],
+		desc: 			'<p>Green Street Jobs offers a staffing solution tailored to the cannabis industry. Me and my partners worked for years creating tech solutions for the staffing industry, and we wanted to apply our skills to the burgeoning cannabis industry. We worked with business leaders in the community in Oregon and Washington to address their stress points in their very new and unusual industry. </p><p><strong>Development:</strong> The build centers around three great codebases (WP Job Manager, Roots Sage, and Bootstrap) I chose because their object oriented structure allowed me to customize this product quickly, without work-arounds. Our job board build features employer and job seeker dashboards, sortable lists of applicants for employers, and quick apply sliders so job seekers can show off their skills quickly and easily.</p><p><strong>Design:</strong> We chose early on to limit the numbers of photos on the site and to minimize the pot references. I felt that this approach would allow any person to imagine themself a user, and play down any cutural stigma that weed has had in the past. The new cannabis industry includes scientists, entrepaneurs, farmers, and political activists as well as pot enthusiasts. Our goal was to send design trust signals and keep the appearance open to all and not too stoney.</p>',
+		color: 			'#fff',
+		heroDesktop: 	'gsj-desktop.png',
+		heroMobile: 	'gsj-mobile.png',
+		images: 		[
+							[ 'gsj-dashboard.png', 'gsj-dashboard_sm.png' ],
+							[ 'gsj-jobsort.png', 'gsj-jobsort_sm.png' ],
+							[ 'gsj-quickapply.png', 'gsj-quickapply_sm.png' ]
+						] 
+	},
+
+	// gowithadvanced: {
+	// 	name: 			'Go With Advanced',
+	// 	tagline: 		'Role: Front and back end Wordpress development.',
+	// 	url: 			'https://www.gowithadvanced.com/',
+	// 	logo: 			'gowithadvanced-logo.jpg',
+	// 	tags: 			['Wordpress','HTML','Sass'],
+	// 	desc: 			'<p>The corporate hub site of Advanced. Features include: home and secondary pages, internal careers, moustache js signature builder.</p>',
+	// 	color: 			'#fff',
+	// 	heroDesktop: 	'gwa-home.jpg',
+	// 	heroMobile: 	'gowithadvanced-mobile.png',
+	// 	images: 		[
+	// 						[ 'gwa-home.jpg', 'gwa-home_sm.png' ],
+	// 						[ 'gwa-signature-builder.jpg', 'gwa-signature-builder_sm.png' ],
+	// 					] 
+	// },
 
 	ostech: {
 		name: 			'OS Technical Staffing',
@@ -107,7 +143,7 @@ const projects = {
 		url: 			'http://www.corsource.com/',
 		logo: 			'corsource-logo.png',
 		tags: 			['Wordpress','HTML','Sass'],
-		desc: 			'<p>Tech staffing in Portland, OR. Features include: Stacked / photo heavy layout, job board, popbot promotional plugin.</p>de: job board, events feature, 80\'s CRT easter egg, team member sorter.</p>',
+		desc: 			'<p>Tech staffing in Portland, OR. Features include: Stacked / photo heavy layout, job board, popbot promotional plugin.</p>',
 		color: 			'#0f0f0f',
 		heroDesktop: 	'corsource-home.jpg',
 		heroMobile: 	'corsource-mobile.png',
@@ -118,22 +154,22 @@ const projects = {
 						]
 	},
 
-	davis: {
-		name: 			'Davis Co.',
-		tagline: 		'Role: Front and back end Wordpress development.',
-		url: 			'http://www.corsource.com/',
-		logo: 			'davis-logo.png',
-		tags: 			['Wordpress','HTML','Sass'],
-		desc: 			'<p>Tech staffing in Portland, OR. Features include: Stacked / photo heavy layout, job board, popbot promotional plugin.</p>de: job board, events feature, 80\'s CRT easter egg, team member sorter.</p>',
-		color: 			'#fff',
-		heroDesktop: 	'davis-home.jpg',
-		heroMobile: 	'davis-mobile.png',
-		images: 		[
-							[ 'davis-home.jpg', 'davis-home_sm.png' ],
-							[ 'davis-executives.jpg', 'davis-executives_sm.png' ],
-							[ 'davis-jobboard.jpg', 'davis-jobboard_sm.png' ],
-						]
-	},
+	// davis: {
+	// 	name: 			'Davis Co.',
+	// 	tagline: 		'Role: Front and back end Wordpress development.',
+	// 	url: 			'http://www.corsource.com/',
+	// 	logo: 			'davis-logo.png',
+	// 	tags: 			['Wordpress','HTML','Sass'],
+	// 	desc: 			'<p>Tech staffing in Portland, OR. Features include: Stacked / photo heavy layout, job board, popbot promotional plugin.</p>',
+	// 	color: 			'#fff',
+	// 	heroDesktop: 	'davis-home.jpg',
+	// 	heroMobile: 	'davis-mobile.png',
+	// 	images: 		[
+	// 						[ 'davis-home.jpg', 'davis-home_sm.png' ],
+	// 						[ 'davis-executives.jpg', 'davis-executives_sm.png' ],
+	// 						[ 'davis-jobboard.jpg', 'davis-jobboard_sm.png' ],
+	// 					]
+	// },
 
 	centra: {
 		name: 			'Centra Healthcare',

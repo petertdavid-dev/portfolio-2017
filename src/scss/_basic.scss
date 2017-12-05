@@ -116,7 +116,7 @@ iframe {
 	margin: 4rem 0;
 	border-radius: .5rem;
 
-	@media (min-width: $small) {
+	@media (min-width: $medium) {
 		padding: 1rem 3rem;
 		margin: 4rem 2rem;
 	}
@@ -135,6 +135,8 @@ iframe {
 	margin-left: -15px;
 }
 
+.one-third,
+.two-thirds,
 .half {
 	position: relative;
 	width: 100%;
@@ -142,10 +144,34 @@ iframe {
 	padding-right: 15px;
 	padding-left: 15px;
 
-	@media (min-width: $small) {
+	@media (min-width: $medium) {
 		-webkit-box-flex: 0;
 		-ms-flex: 0 0 50%;
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
 }
+
+
+.one-third {
+	width: 100%;
+
+	@media (min-width: $medium) {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 33%;
+		flex: 0 0 33%;
+		max-width: 33%;
+	}
+}
+
+.two-thirds {
+	width: 100%;
+
+	@media (min-width: $medium) {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 66%;
+		flex: 0 0 66%;
+		max-width: 66%;
+	}
+}
+

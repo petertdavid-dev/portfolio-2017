@@ -41,7 +41,7 @@ const Root = () => {
 
 			<nav className="app-nav">
 				<Link to="/">Home</Link> 
-				<Link to="/portfolio">Portfolio</Link> 
+				<Link to="/portfolio">Work</Link> 
 				<Link to="/about">About</Link> 
 			</nav>
 		</div>

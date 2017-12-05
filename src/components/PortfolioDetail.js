@@ -86,26 +86,26 @@ class PortfolioDetail extends Component {
 
 		return (
 			<div className="PortfolioDetail">
-				<a href="/portfolio">Back to Portfolio</a>
+				<a href="/portfolio"  className="PortfolioDetail__back" >⇦ Back to Portfolio</a>
 
 				<div className="row">
 
-					<div className="half">
-						<h2>{this.state.name}</h2>
-						<ul>
-							{ tagMarkup }
-						</ul>
-						<p><a href={this.state.url} >{this.state.url}</a></p>
-						<p><strong>{this.state.tagline}</strong></p>
-						<div dangerouslySetInnerHTML={{__html: this.state.desc }} />
-					</div>
-					<div className="half">
+					<div className="one-third">
 						<div className="PortfolioDetail__herowrap">
 							<img className="PortfolioDetail__desktopimg" src={heroDesktop} alt={this.state.name + ' Desktop'} />
 							<img className="PortfolioDetail__mobileimg" src={heroMobile} alt={this.state.name + ' Mobile'} />
 						</div>
 					</div>
 
+					<div className="two-thirds">
+						<h2>{this.state.name}</h2>
+						<ul className="PortfolioDetail__tags">
+							{ tagMarkup }
+						</ul>
+						<p><a href={this.state.url} >{this.state.url}</a></p>
+						<p><strong>{this.state.tagline}</strong></p>
+						<div dangerouslySetInnerHTML={{__html: this.state.desc }} />
+					</div>
 
 				</div>
 
